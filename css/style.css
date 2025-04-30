@@ -1,0 +1,114 @@
+body{
+    font-family:'Poppins', sans-serif;
+      color: black;
+    background-color: white;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.logo-anodalhorizontal{
+    width: 200px;
+    justify-content: left;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    color: black;
+    font-size: 25px;
+}
+nav a{
+    text-decoration: none;
+}
+image{
+    border-radius: 10%;
+
+}
+.titulo-inicio{
+    color: black;
+    text-decoration: underline;
+}
+.titulo-características{
+    color: black;
+    text-decoration: underline;
+}
+.titulo-proyectos{
+    color: black;
+    text-decoration: underline;
+}
+.titulo-quienessomos{
+    color: black;
+    text-decoration: underline;
+}
+.titulo-contacto{
+    color: black;
+    text-decoration: underline;
+}
+.inicio-verproyectos {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.inicio-verproyectos a{
+    color: white;
+}
+.inicio-conocermas{
+    background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.img-inicio{
+    justify-content: center;
+    border-radius: 10%;
+}
+.subtitulo-características{
+    text-align: center;
+    font-size: 20px;
+}
+.subtitulo-configuraciones{
+    text-align: center;
+    font-size: 20px;
+}
+h1{ 
+    transform: rotate(90deg);
+  transform-origin: left;
+  text-align-last: auto;
+  margin-left: 80%;
+  font-size: 70px;
+  color: rgb(0, 0, 0);
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 300;
+}
+.img-3hojas{
+    justify-content: center;
+    width: 90%;
+}
+
+.logo-piedepag{
+    width: 200px;
+    justify-content: left;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    color: black;
+    font-size: 25px;
+}
+footer a{
+    text-decoration: none;
+}
