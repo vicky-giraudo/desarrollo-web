@@ -1,54 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecno 8</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img class="logo-anodalhorizontal" src="../icons/ANODAL_logoNegroPNG.png" alt="logo anodal png">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/características.html">Características</a></li>
-                <li><a href="../pages/proyectos.html">Proyectos</a></li>
-                <li class="titulo-quienessomos">Quienes somos</li>
-                <li><a href="../pages/contactos.html">Contacto</a></li>
+        <!--Navegación-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+            <img src="../icons/ANODAL_logoNegroPNG.png" alt="logo anodal png" class="logo-navbar">
+            </a>
+            <!-- Botón del menú hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../pages/características.html">Características</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                <a  class="nav-link navbar-line active" aria-current="page"  href="../pages/quienessomos.html">Quiénes somos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+                </li>
             </ul>
-        </nav>
+            </div>
+        </div>
+        </nav>      
     </header>
     <main>
         
-        <section>
-            <article>
+        <section class="quienessomos">
+            <div class="contenedor">
+            <div class="texto">
                 <h2>Anodal</h2>
                 <h3>Para un gran proyecto, una gran empresa</h3>
-                <img src="../images/anodalexterior.jpg" alt="anodal">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolore ipsa deleniti labore aliquam vero. Totam alias rem omnis dolorum ullam culpa non repellat, accusamus sunt perferendis nostrum facilis assumenda.
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolore ipsa deleniti labore aliquam vero. Totam alias rem omnis dolorum ullam culpa non repellat, accusamus sunt perferendis nostrum facilis assumenda.
                 Enim quos atque eius nostrum! Vitae illo similique aspernatur officia explicabo asperiores temporibus blanditiis odit natus optio perferendis nemo provident tempora laboriosam velit, unde illum dolores hic repudiandae, nobis aut.
                 Nostrum fugit quod consequatur ex odio maiores error, officia doloremque alias. Autem quos praesentium alias! Laborum, sit iure? Vero labore tenetur alias esse dicta recusandae quas sit placeat, officiis fugit?
-                Totam, iusto? Sapiente quidem a, dolor nisi ratione velit. Nemo, quidem doloribus inventore laborum incidunt tenetur voluptatem dolorum nobis voluptate cumque nulla iste animi optio ipsum cum repudiandae voluptatibus soluta!</p>
-            </article>
+                Totam, iusto?
+                </p>
+            </div>
+            <div class="imagen">
+                <img src="../images/anodalexterior.jpg" alt="anodal fachada exterior" />
+            </div>
+            </div>
         </section>
+        <!--SECCIÓN LINEAS DE ANODAL-->
         <section>
-            <article>
-                <h2>Nuestros proyectos y líneas</h2>
-                <img src="../images/anodalportada.jpg"alt="anodal">
-                <button><a href="https://anodal.com.ar/">Ir al sitio web</a></button>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <img class="logo-piedepag" src="../icons/VerticalNegroPNG.png" alt="logo pie de pagina anodal">
-        <ul>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade seccion-carrusel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/render-exterior decote-T8 (3).JPG" class="d-block w-100 carrusel-img" alt="render tecno 8 exterior">
+                <div class="carousel-caption bottom-left">
+                <h2>50 años cumpliendo con nuestros clientes</h2>
+                <p>Conoce más sobre nuestras líneas</p>
+                <a href="https://anodal.com.ar/" target="_blank" rel="noopener noreferrer"
+                    class="btn-carrusel"
+                    onclick="event.stopPropagation();">
+                    Ir al sitio web <span class="flecha">></span>
+                </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../images/render-piso integrado.PNG" class="d-block w-100 carrusel-img" alt="render tecno 8 piso integrado">
+                <div class="carousel-caption bottom-left">
+                    <h2>50 años cumpliendo con nuestros clientes</h2>
+                    <p>Conoce más sobre nuestras líneas</p>
+                    <a href="https://anodal.com.ar/" target="_blank" rel="noopener noreferrer"
+                    class="btn-carrusel"
+                    onclick="event.stopPropagation();">
+                    Ir al sitio web <span class="flecha">></span>
+                </a>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        </section>       
+    </main> 
+    <footer class="footer">
+        <div class="footer-content">
+        <img src="../icons/ANODAL_logoNegroPNG.png" alt="logo pie de página anodal" class="footer-logo">
+        <ul class="footer-links">
             <li><img src="../icons/wsp.png" alt="Whatsapp"> +54 9 3512008066</li>
-            <li><img src="../icons/location.png" alt="ubicación de la empresa"><a href="https://maps.app.goo.gl/4tAfDh3dM7c9TJ287">Av. Japón 1292,Córdoba, Argentina</a></li>
-            <li><img src="../icons/calendar.png" alt="Agendar una cita"><a href="pages/contactos.html">Agendar cita</a></li>
-            <li><img src="../icons/email.png" alt="Envía un mail"><a href="pages/contactos.html">info@anodal.com.ar</a></li>
-            <li><img src="../icons/instagram.png" alt="visitar instagram"><a href="https://www.instagram.com/anodal_aberturas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+            <li><img src="../icons/location.png" alt="Ubicación"><a href="https://maps.app.goo.gl/4tAfDh3dM7c9TJ287">Av. Japón 1292, Córdoba</a></li>
+            <li><img src="../icons/calendar.png" alt="Agendar cita"><a href="../pages/contactos.html">Agendar cita</a></li>
+            <li><img src="../icons/email.png" alt="Email"><a href="../pages/contactos.html">info@anodal.com.ar</a></li>
+            <li><img src="../icons/instagram.png" alt="Instagram"><a href="https://www.instagram.com/anodal_aberturas">Instagram</a></li>
         </ul>
-    </footer>    
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
