@@ -1,0 +1,95 @@
+// scss/_contacto.scss
+// Estilos para la sección de contacto
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'placeholders';
+
+.contacto-container {
+display: flex;
+justify-content: center;
+align-items: stretch;
+width: 90%;
+margin: 0 auto;
+padding: 2rem 0;
+gap: 2rem;
+
+@include respond-md {
+    flex-direction: column;
+    width: 95%;
+}
+}
+
+.contacto-imagen {
+flex: 0 0 60%;
+overflow: hidden;
+border-radius: 10px;
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+@include respond-md {
+    flex: 1 1 100%;
+}
+}
+
+.contacto-form {
+flex: 0 0 30%;
+background: rgba(255, 255, 255, 0.9);
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+@include respond-md {
+    flex: 1 1 100%;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    font-family: $font-base;
+}
+}
+
+.btn-contacto {
+display: block;
+width: 100%;
+margin-top: 1.5rem;
+padding: 0.8rem 1.4rem;
+background-color: $color-black;
+color: $color-white;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1rem;
+transition: background-color 0.3s ease;
+
+&:hover {
+    background-color: $color-dark;
+}
+}

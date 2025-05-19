@@ -1,0 +1,136 @@
+// scss/_quienessomos.scss
+// Estilos para la sección de quienes somos
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'placeholders';
+
+.quienessomos {
+padding: 2rem;
+
+.contenedor {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include respond-md {
+    flex-direction: column-reverse;
+    gap: 20px;
+    }
+}
+
+.texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+h2 {
+    font-size: $font-size-lg;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+h3 {
+    font-size: $font-size-md;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: $color-black;
+}
+
+p {
+    font-size: $font-size-sm;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.imagen {
+    flex: 1;
+    min-width: 300px;
+
+    img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    }
+}
+}
+
+// SECCION CARRUSEL (CONOCER LINEAS Y PROYECTOS)
+.seccion-carrusel {
+margin: 40px 0;
+position: relative;
+
+.carousel-item {
+    img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    }
+}
+
+.carousel-caption {
+    &.bottom-left {
+    bottom: 5%;
+    left: 5%;
+    right: auto;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 90%;
+
+    h2 {
+        font-size: $font-size-lg;
+        margin-bottom: 0.5rem;
+        color: $color-white;
+    }
+
+    p {
+        font-size: $font-size-md;
+        margin-bottom: 1rem;
+        color: rgba(255, 255, 255, 0.85);
+    }
+    }
+}
+
+.btn-carrusel {
+    @include btn-style;
+    border-radius: 10px;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+
+    .flecha {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    }
+
+    &:hover {
+    background-color: $color-dark;
+    }
+}
+}
+
+@media (max-width: $bp-sm) {
+.carrusel-img {
+    height: 50vh;
+}
+
+.carousel-caption.bottom-left {
+    bottom: 3%;
+    left: 3%;
+    padding: 1rem;
+
+    h2 {
+    font-size: 1.5rem;
+    }
+
+    p {
+    font-size: 1rem;
+    }
+}
+}

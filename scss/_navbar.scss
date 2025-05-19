@@ -1,0 +1,63 @@
+// scss/_navbar.scss
+// Estilos específicos de la navbar
+@use 'variables';
+@use 'mixins';
+@use 'placeholders';
+
+.navbar {
+background: none;
+padding: variables.$space-md variables.$space-lg;
+position: relative;
+z-index: 1050;
+
+.container-fluid {
+    @extend %flex-center;
+    justify-content: space-between;
+}
+
+ul {
+    @extend %flex-center;
+    list-style: none;
+    margin-left: auto;
+
+    li {
+    margin: 0 variables.$space-lg;
+
+    a {
+        color: variables.$color-black;
+        text-decoration: none;
+        padding: variables.$space-sm 0;
+
+        &.navbar-line {
+        padding-bottom: variables.$space-sm;
+        border-bottom: 2px solid variables.$color-black;
+        }
+    }
+    }
+}
+
+.logo-navbar {
+    width: 100px;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+@include mixins.respond-md {
+    .navbar-nav {
+    width: 100%;
+    text-align: center;
+
+    .nav-item {
+        width: 100%;
+        margin: variables.$space-md 0;
+
+        .nav-link {
+        padding: variables.$space-md 0;
+        }
+    }
+    }
+}
+}

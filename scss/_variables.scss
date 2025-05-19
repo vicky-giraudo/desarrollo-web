@@ -1,0 +1,25 @@
+// scss/_variables.scss
+// Todas mis variables de color, tipografías, espaciados, etc.
+// Colores
+$color-black:      #000;
+$color-dark:       #1d1d1d;
+$color-white:      #fff;
+$bg-overlay:       rgba(255, 255, 255, 0.7);
+$bg-overlay-dark:  rgba(0, 0, 0, 0.5);
+
+// Tipografía
+$font-base:        'Poppins', sans-serif;
+$font-size-lg:     2rem;
+$font-size-md:     1.5rem;
+$font-size-sm:     1.1rem;
+
+// Espaciados
+$space-xs:         0.5rem;
+$space-sm:         0.75rem;
+$space-md:         1rem;
+$space-lg:         1.5rem;
+$space-xl:         2rem;
+
+// Breakpoints
+$bp-md: 768px;
+$bp-sm: 576px;

@@ -1,0 +1,64 @@
+// scss/_mixins.scss
+// Mixins reutilizables para el proyecto
+@use 'variables' as *;
+
+@mixin respond-md {
+@media (max-width: $bp-md) {
+    @content;
+}
+}
+
+@mixin respond-sm {
+@media (max-width: $bp-sm) {
+    @content;
+}
+}
+
+// Transiciones
+@mixin transition($props...) {
+transition: $props 0.3s ease;
+}
+
+// Botón genérico
+@mixin btn-style {
+display: inline-flex;
+align-items: center;
+background-color: $color-black;
+color: $color-white;
+padding: $space-sm $space-md;
+text-transform: uppercase;
+font-weight: 600;
+border-radius: 5px;
+text-decoration: none;
+cursor: pointer;
+@include transition(background-color);
+
+&:hover {
+    background-color: $color-dark;
+}
+
+&::after {
+    content: '>';
+    font-size: 1.2rem;
+    margin-left: auto;
+}
+}
+
+// Mixin para grid responsivo de proyectos
+@mixin grid-responsive($cols, $gap) {
+width: 100%;
+display: grid;
+justify-content: center;
+grid-template-columns: repeat($cols, minmax(0, 1fr));
+grid-gap: $gap;
+align-items: center;
+
+@include respond-md {
+    grid-template-columns: repeat(if($cols > 2, 2, $cols), 1fr);
+}
+
+@include respond-sm {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+}
+}

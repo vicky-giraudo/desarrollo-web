@@ -1,0 +1,54 @@
+// scss/_hero.scss
+// Hero: imagenes, botones, overlay
+@use 'variables';
+@use 'mixins';
+
+.hero-card {
+position: relative;
+
+&__image {
+    img {
+    width: 100%;
+    display: block;
+    }
+}
+
+&__overlay {
+    position: absolute;
+    bottom: variables.$space-xl;
+    left: variables.$space-xl;
+    background-color: variables.$bg-overlay;
+    padding: variables.$space-md;
+    border-radius: 8px;
+
+    .overlay__title {
+    font-size: variables.$font-size-lg;
+    margin-bottom: variables.$space-sm;
+    }
+    .overlay__subtitle {
+    font-size: variables.$font-size-sm;
+    line-height: 1.6;
+    }
+
+    .overlay__buttons {
+    display: flex;
+    gap: variables.$space-sm;
+
+    .btn {
+        @include mixins.btn-style;
+        padding: variables.$space-xs variables.$space-md;
+    }
+    }
+}
+
+@include mixins.respond-sm {
+    display: grid;
+    grid-template-rows: auto auto;
+
+    &__overlay {
+    position: relative;
+    margin: 0 auto variables.$space-md;
+    max-width: 90%;
+    }
+}
+}

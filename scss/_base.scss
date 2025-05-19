@@ -1,0 +1,19 @@
+// scss/_base.scss
+// Reset, tipografía global, body/html
+@use 'variables';
+
+html, body {
+font-family: variables.$font-base;
+color: variables.$color-black;
+background-color: variables.$color-white;
+height: 100%;
+margin: 0;
+display: flex;
+flex-direction: column;
+overflow-x: hidden;
+}
+
+body > main,
+body > section {
+flex: 1;
+}
