@@ -18,9 +18,10 @@ display: grid;
 justify-content: center;
 gap: variables.$space-lg;
 padding: variables.$space-md;
+height: 100%;
 
 @include mixins.respond-md {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
 }
 @include mixins.respond-sm {
     grid-template-columns: 1fr;

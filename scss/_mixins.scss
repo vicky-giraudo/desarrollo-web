@@ -4,13 +4,13 @@
 
 @mixin respond-md {
 @media (max-width: $bp-md) {
-    @content;
+@content;
 }
 }
 
 @mixin respond-sm {
 @media (max-width: $bp-sm) {
-    @content;
+@content;
 }
 }
 

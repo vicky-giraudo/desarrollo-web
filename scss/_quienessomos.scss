@@ -119,11 +119,12 @@ position: relative;
 .carrusel-img {
     height: 50vh;
 }
-
-.carousel-caption.bottom-left {
+.bottom-left {
     bottom: 3%;
     left: 3%;
+    align-self: flex-end;
     padding: 1rem;
+    position: sticky;
 
     h2 {
     font-size: 1.5rem;
@@ -132,5 +133,6 @@ position: relative;
     p {
     font-size: 1rem;
     }
+    
 }
 }

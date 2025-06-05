@@ -1,43 +1,47 @@
-// scss/_footer.scss
-// Estilos del footer
-// Rediseñar para entrega finnal!!
-@use 'variables';
-@use 'placeholders';
+.footer-custom {
+background-color: #f8f9fa;
+padding: 1.5rem 0;
+}
 
-.footer {
-background-color: variables.$color-white;
-padding: variables.$space-lg;
-
-.footer-content {
-    @extend %flex-center;
-    gap: variables.$space-lg;
-    flex-wrap: wrap;
+.footer-container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 1rem;
 }
 
 .footer-logo {
-    width: 100px;
+width: 100px;
 }
 
-.footer-links {
-    @extend %flex-center;
-    list-style: none;
-    gap: variables.$space-lg;
-    flex-wrap: wrap;
+.footer-icons {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 1rem;
+list-style: none;
+padding: 0;
+margin: 0;
 
-    li {
-    @extend %flex-center;
-    gap: variables.$space-xs;
-    white-space: nowrap;
+li {
+    a img {
+    width: 32px;
+    transition: transform 0.2s ease;
 
-    a {
-        color: variables.$color-black;
-        text-decoration: none;
-
-        &:hover {
-        color: variables.$color-dark;
-        }
+    &:hover {
+        transform: scale(1.1);
     }
     }
 }
 }
-
+@media (min-width: 576px) {
+.footer-container {
+    flex-direction: 2 row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-icons {
+    gap: 1.5rem;
+    width: 1;
+}
+}
